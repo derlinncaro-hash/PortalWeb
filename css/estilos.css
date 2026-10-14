@@ -1,0 +1,286 @@
+/* Configuración general */
+:root {
+    --fondo: #111015;
+    --fondo-secundario: #1b1822;
+    --morado: #a78bfa;
+    --blanco: #f4f0f7;
+    --gris: #c3bdca;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 75px;
+}
+
+body {
+    margin: 0;
+    background: var(--fondo);
+    color: var(--blanco);
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.7;
+}
+
+section {
+    scroll-margin-top: 70px;
+}
+
+h1,
+h2,
+h3,
+.navbar-brand {
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: 24px;
+}
+
+h2 span,
+.navbar-brand span {
+    color: var(--morado);
+}
+
+p {
+    color: var(--gris);
+}
+
+/* Navegación */
+.navbar {
+    background: rgba(17, 16, 21, 0.96);
+    border-bottom: 1px solid #39313f;
+    backdrop-filter: blur(10px);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.nav-link {
+    color: var(--blanco);
+    margin-left: 12px;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--morado);
+}
+
+/* Portada */
+.portada {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background:
+        linear-gradient(90deg, rgba(12, 10, 17, 0.97),
+            rgba(12, 10, 17, 0.68)),
+        url("../img/tim-burton.jpg") center/cover no-repeat;
+    padding: 130px 0 80px;
+}
+
+.contenido-portada {
+    padding-top: 30px;
+}
+
+.subtitulo,
+.etiqueta {
+    color: var(--morado);
+    font-size: 0.82rem;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+
+.portada h1 {
+    font-size: clamp(2.8rem, 7vw, 6rem);
+    font-weight: bold;
+    line-height: 1.12;
+    margin: 24px 0;
+}
+
+.portada h1 span {
+    color: var(--morado);
+}
+
+.descripcion-portada {
+    max-width: 560px;
+    font-size: 1.15rem;
+    margin-bottom: 30px;
+}
+
+/* Botones */
+.btn-burton {
+    background: var(--morado);
+    color: #17121e;
+    border: 1px solid var(--morado);
+    border-radius: 2px;
+    padding: 11px 22px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-burton:hover {
+    background: transparent;
+    color: var(--morado);
+    transform: translateY(-2px);
+}
+
+/* Secciones de las películas */
+.seccion {
+    padding: 100px 0;
+}
+
+.seccion-oscura {
+    background: var(--fondo-secundario);
+}
+
+.imagen-seccion {
+    width: 100%;
+    max-height: 480px;
+    object-fit: cover;
+    border: 1px solid #55465f;
+    box-shadow: 12px 12px 0 #30263a;
+}
+
+/* Buscador */
+.buscador {
+    background: #111015;
+    color: var(--blanco);
+    border: 1px solid #51465d;
+    border-radius: 2px;
+    padding: 13px 16px;
+}
+
+.buscador::placeholder {
+    color: #aaa0b4;
+}
+
+.buscador:focus {
+    background: #111015;
+    color: white;
+    border-color: var(--morado);
+    box-shadow: 0 0 0 0.2rem rgba(167, 139, 250, 0.15);
+}
+
+/* Tarjetas de películas */
+.tarjeta {
+    background: #211d29;
+    color: var(--blanco);
+    border: 1px solid #39313f;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-7px);
+    border-color: var(--morado);
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    background: #30283a;
+}
+
+.tarjeta .card-body {
+    padding: 24px;
+}
+
+.tarjeta .card-title {
+    font-size: 1.3rem;
+}
+
+.tarjeta .card-text {
+    min-height: 80px;
+}
+
+.anio {
+    color: var(--morado);
+    font-weight: bold;
+}
+
+/* Bloques de estilo */
+.bloque-estilo {
+    height: 100%;
+    padding: 32px 24px;
+    background: var(--fondo-secundario);
+    border: 1px solid #39313f;
+    transition: border-color 0.3s;
+}
+
+.bloque-estilo:hover {
+    border-color: var(--morado);
+}
+
+.bloque-estilo h3 {
+    font-size: 1.3rem;
+    margin: 18px 0;
+}
+
+.simbolo {
+    color: var(--morado);
+    font-size: 3rem;
+    line-height: 1.2;
+}
+
+/* Ventana emergente */
+.modal-burton {
+    background: #211d29;
+    color: var(--blanco);
+    border: 1px solid #55465f;
+}
+
+.modal-burton .modal-header {
+    border-bottom-color: #39313f;
+}
+
+.modal-burton .modal-footer {
+    border-top-color: #39313f;
+}
+
+/* Pie de página */
+.pie {
+    background: #0b0a0e;
+    border-top: 1px solid #39313f;
+    padding: 50px 0 25px;
+}
+
+.pie h3 {
+    color: var(--morado);
+    font-size: 1.3rem;
+}
+
+.credito {
+    font-size: 0.85rem;
+    margin-bottom: 5px;
+}
+
+/* Este es para la vista en el celular*/
+@media (max-width: 767px) {
+    .seccion {
+        padding: 70px 0;
+    }
+
+    .portada {
+        min-height: 85vh;
+    }
+
+    .portada h1 {
+        font-size: 2.7rem;
+    }
+
+    .nav-link {
+        margin-left: 0;
+        padding: 10px 0;
+    }
+
+    .tarjeta img {
+        height: 260px;
+    }
+
+    .tarjeta .card-text {
+        min-height: auto;
+    }
+}

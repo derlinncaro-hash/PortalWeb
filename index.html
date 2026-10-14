@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>El Universo de Tim Burton</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <!-- Menú de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#inicio">
+                TIM <span>BURTON</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#biografia">Biografía</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#peliculas">Películas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#estilo">Estilo visual</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Portada -->
+    <header id="inicio" class="portada">
+        <div class="container contenido-portada">
+            <p class="subtitulo">CINE · FANTASÍA · OSCURIDAD</p>
+
+            <h1>EL UNIVERSO<br>DE <span>TIM BURTON</span></h1>
+
+            <p class="descripcion-portada">
+                Donde lo extraño se convierte en arte y la oscuridad
+                esconde historias extraordinarias.
+            </p>
+
+            <a href="#biografia" class="btn btn-burton">
+                DESCUBRIR SU MUNDO
+            </a>
+        </div>
+    </header>
+
+    <!-- Biografía -->
+    <section id="biografia" class="seccion">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-md-5">
+                    <img src="../img/Tim.Burton.jpg" alt="Retrato de Tim Burton" class="img-fluid imagen-seccion">
+                </div>
+
+                <div class="col-md-7">
+                    <p class="etiqueta">EL CREADOR</p>
+                    <h2>¿Quién es <span>Tim Burton?</span></h2>
+
+                    <p>
+                        Tim Burton es un director, productor, guionista
+                        y artista estadounidense reconocido por crear
+                        mundos fantásticos con una estética oscura,
+                        personajes peculiares y una gran imaginación.
+                    </p>
+
+                    <p>
+                        Desde sus primeros trabajos desarrolló una
+                        identidad visual muy particular, combinando
+                        elementos góticos, humor oscuro, fantasía y
+                        emociones humanas.
+                    </p>
+
+                    <p>
+                        Sus obras exploran con frecuencia la diferencia,
+                        la soledad, la creatividad y la importancia de
+                        aceptar aquello que nos hace únicos.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Películas -->
+    <section id="peliculas" class="seccion seccion-oscura">
+        <div class="container">
+            <div class="text-center mb-5">
+                <p class="etiqueta">HISTORIAS INOLVIDABLES</p>
+                <h2>Su mundo <span>cinematográfico</span></h2>
+                <p>Explora algunas de sus películas más conocidas.</p>
+            </div>
+
+            <!-- Buscador con JavaScript -->
+            <div class="row justify-content-center mb-4">
+                <div class="col-md-6">
+                    <input type="search" id="buscador" class="form-control buscador"
+                        placeholder="Buscar una película..." aria-label="Buscar películas">
+                </div>
+            </div>
+
+            <div class="row g-4" id="lista-peliculas">
+
+                <div class="col-md-6 col-lg-4 pelicula" data-nombre="beetlejuice">
+                    <div class="card tarjeta h-100">
+                        <img src="../img/Beetlejuice.jpg" class="card-img-top" alt="Imagen de Beetlejuice">
+                        <div class="card-body">
+                            <h3 class="card-title">Beetlejuice</h3>
+                            <p class="anio">1988</p>
+                            <p class="card-text">
+                                Una comedia fantástica que mezcla
+                                lo sobrenatural, lo absurdo y el humor
+                                oscuro.
+                            </p>
+                            <button class="btn btn-burton boton-detalle" data-titulo="Beetlejuice"
+                                data-detalle="Una comedia fantástica de 1988 que combina fantasmas, situaciones absurdas y humor oscuro.">
+                                Conocer más
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 pelicula" data-nombre="el joven manos de tijera edward scissorhands">
+                    <div class="card tarjeta h-100">
+                        <img src="../img/JovenManosDeTijeras.jpg" class="card-img-top"
+                            alt="Imagen de El joven manos de tijera">
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                El joven manos de tijera
+                            </h3>
+                            <p class="anio">1990</p>
+                            <p class="card-text">
+                                La historia de un joven diferente que
+                                intenta encontrar su lugar en el mundo.
+                            </p>
+                            <button class="btn btn-burton boton-detalle" data-titulo="El joven manos de tijera"
+                                data-detalle="Una historia fantástica sobre la diferencia, la aceptación y la dificultad de encajar en la sociedad.">
+                                Conocer más
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 pelicula" data-nombre="el cadaver de la novia corpse bride">
+                    <div class="card tarjeta h-100">
+                        <img src="../img/ElCadaverDeLaNovia.jpg" class="card-img-top"
+                            alt="Imagen de El cadáver de la novia">
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                El cadáver de la novia
+                            </h3>
+                            <p class="anio">2005</p>
+                            <p class="card-text">
+                                Una película de animación stop-motion
+                                que une romance fantástico y misterio.
+                            </p>
+                            <button class="btn btn-burton boton-detalle" data-titulo="El cadáver de la novia"
+                                data-detalle="Una película de animación stop-motion con una atmósfera gótica, música y personajes inolvidables.">
+                                Conocer más
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 pelicula"
+                    data-nombre="el extraño mundo de jack nightmare before christmas">
+                    <div class="card tarjeta h-100">
+                        <img src="../img/Jack.jpg" class="card-img-top" alt="Imagen de El extraño mundo de Jack">
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                El extraño mundo de Jack
+                            </h3>
+                            <p class="anio">1993</p>
+                            <p class="card-text">
+                                Una aventura animada que combina
+                                Halloween, Navidad y fantasía.
+                            </p>
+                            <button class="btn btn-burton boton-detalle" data-titulo="El extraño mundo de Jack"
+                                data-detalle="Una historia animada sobre Jack Skellington y su fascinación por descubrir una celebración diferente.">
+                                Conocer más
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 pelicula" data-nombre="charlie y la fabrica de chocolate">
+                    <div class="card tarjeta h-100">
+                        <img src="../img/Charlie.jpg" class="card-img-top"
+                            alt="Imagen de Charlie y la fábrica de chocolate">
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                Charlie y la fábrica de chocolate
+                            </h3>
+                            <p class="anio">2005</p>
+                            <p class="card-text">
+                                Un viaje lleno de imaginación,
+                                escenarios sorprendentes y fantasía.
+                            </p>
+                            <button class="btn btn-burton boton-detalle" data-titulo="Charlie y la fábrica de chocolate"
+                                data-detalle="Una aventura fantástica ambientada en una fábrica extraordinaria, dirigida por Tim Burton en 2005.">
+                                Conocer más
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 pelicula"
+                    data-nombre="alice in wonderland alicia en el pais de las maravillas">
+                    <div class="card tarjeta h-100">
+                        <img src="../img/aliciaEnElPaisDeLasMaravillas.jpg" class="card-img-top"
+                            alt="Imagen de Alicia en el país de las maravillas">
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                Alicia en el país de las maravillas
+                            </h3>
+                            <p class="anio">2010</p>
+                            <p class="card-text">
+                                Una interpretación visual fantástica
+                                de un mundo lleno de criaturas extrañas.
+                            </p>
+                            <button class="btn btn-burton boton-detalle"
+                                data-titulo="Alicia en el país de las maravillas"
+                                data-detalle="La versión de Tim Burton de 2010 reimagina el universo de Alicia con escenarios y personajes fantásticos.">
+                                Conocer más
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <p id="sin-resultados" class="text-center mt-4" hidden>
+                No se encontraron películas con ese nombre.
+            </p>
+        </div>
+    </section>
+
+    <!-- Estilo visual -->
+    <section id="estilo" class="seccion">
+        <div class="container">
+            <div class="text-center mb-5">
+                <p class="etiqueta">UNA IDENTIDAD ÚNICA</p>
+                <h2>La estética de <span>Burton</span></h2>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="bloque-estilo">
+                        <div class="simbolo">☾</div>
+                        <h3>Oscuridad y fantasía</h3>
+                        <p>
+                            Ambientes misteriosos, sombras y escenarios
+                            que parecen sacados de un sueño.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="bloque-estilo">
+                        <div class="simbolo">✦</div>
+                        <h3>Personajes únicos</h3>
+                        <p>
+                            Figuras excéntricas que encuentran su
+                            propia identidad en mundos diferentes.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="bloque-estilo">
+                        <div class="simbolo">✧</div>
+                        <h3>Arte visual</h3>
+                        <p>
+                            Contrastes marcados, formas alargadas,
+                            detalles góticos y una imaginación inconfundible.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="pie">
+        <div class="container text-center">
+            <h3>EL UNIVERSO DE TIM BURTON</h3>
+            <p>
+                Un portal dedicado a mi director favorito
+            </p>
+            <p class="credito">
+               ADSO 
+            </p>
+            <p class="credito">
+                © <span id="anio-actual"></span> · Mi portal web
+            </p>
+        </div>
+    </footer>
+
+    <!-- Ventana emergente -->
+    <div class="modal fade" id="modalPelicula" tabindex="-1" aria-labelledby="modalTitulo" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-burton">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-5" id="modalTitulo">
+                        Película
+                    </h2>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body" id="modalTexto"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-burton" data-bs-dismiss="modal">
+                        Cerrar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript propio -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
